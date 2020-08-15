@@ -17,9 +17,9 @@ PACKAGE_LIST        := go list ./...| grep -vE "cmd"
 PACKAGES            := $$($(PACKAGE_LIST))
 
 # Targets
-.PHONY: clean test proto kv scheduler dev
+.PHONY: clean test proto kv scheduler client dev
 
-default: kv scheduler
+default: kv scheduler client
 
 dev: default test
 
@@ -40,6 +40,9 @@ kv:
 
 scheduler:
 	$(GOBUILD) -o bin/tinyscheduler-server scheduler/main.go
+
+client:
+	$(GOBUILD) -o bin/tinykv-client client/main.go
 
 ci: default
 	@echo "Checking formatting"

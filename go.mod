@@ -3,13 +3,17 @@ module github.com/pingcap-incubator/tinykv
 require (
 	github.com/BurntSushi/toml v0.3.1
 	github.com/Connor1996/badger v1.5.1-0.20200306031920-9bbcbd8ba570
+	github.com/c-bata/go-prompt v0.2.3
 	github.com/coreos/pkg v0.0.0-20180928190104-399ea9e2e55f
+	github.com/dgraph-io/badger v1.6.0
+	github.com/dgraph-io/badger/v2 v2.0.3
 	github.com/docker/go-units v0.4.0
 	github.com/gogo/protobuf v1.3.1
 	github.com/golang/protobuf v1.3.4
 	github.com/google/btree v1.0.0
 	github.com/juju/errors v0.0.0-20181118221551-089d3ea4e4d5
 	github.com/juju/testing v0.0.0-20200510222523-6c8c298c77a0 // indirect
+	github.com/manifoldco/promptui v0.7.0
 	github.com/onsi/ginkgo v1.12.1 // indirect
 	github.com/onsi/gomega v1.10.0 // indirect
 	github.com/opentracing/opentracing-go v1.0.2
@@ -21,6 +25,7 @@ require (
 	github.com/pingcap/tidb v1.1.0-beta.0.20200309111804-d8264d47f760
 	github.com/pingcap/tipb v0.0.0-20200212061130-c4d518eb1d60
 	github.com/pkg/errors v0.8.1
+	github.com/pkg/term v0.0.0-20200520122047-c3ffed290a03 // indirect
 	github.com/remyoudompheng/bigfft v0.0.0-20200410134404-eec4a21b6bb0 // indirect
 	github.com/shirou/gopsutil v2.19.10+incompatible
 	github.com/sirupsen/logrus v1.2.0

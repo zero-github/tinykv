@@ -31,6 +31,7 @@ var (
 func main() {
 	flag.Parse()
 	conf := config.NewDefaultConfig()
+	conf.Raft = false
 	if *schedulerAddr != "" {
 		conf.SchedulerAddr = *schedulerAddr
 	}
